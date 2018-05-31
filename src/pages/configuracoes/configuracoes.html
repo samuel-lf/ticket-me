@@ -1,0 +1,27 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Configurações</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-list>
+			<button ion-item (click)="meusDados()">
+        <ion-icon name="person" item-start></ion-icon>
+        Meus dados
+      </button>
+
+			<button ion-item>
+        <ion-icon name="information-circle" item-start></ion-icon>
+        Sobre o aplicativo
+      </button>
+
+			<button ion-item (click)="logout()">
+        <ion-icon name="log-out" item-start></ion-icon>
+        Sair
+     </button>
+
+		</ion-list>
+	</ion-card>
+</ion-content>

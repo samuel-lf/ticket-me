@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Resgates</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let r of lista | async">
+        <h2>{{r.nomeUsuario}}</h2>
+        <p>{{r.nomePromocao}}</p>
+        <p *ngIf="r.resgatado">Resgatado em: {{r.data | date: 'dd/MM/yyy HH:mm'}}</p>
+        <small *ngIf="!r.resgatado">Pendente</small>
+      </ion-item>
+    </ion-list>
+  </ion-content>

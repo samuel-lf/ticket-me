@@ -1,0 +1,31 @@
+<ion-content>
+	<form #f="ngForm" (ngSubmit)="registrarUser(f)">
+		<ion-list>
+
+			<ion-item>
+				<ion-label floating> Nome completo </ion-label>
+				<ion-input type="text" name="nome" ngModel> </ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating> Telefone </ion-label>
+				<ion-input type="tel" name="telefone" ngModel> </ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating> Email </ion-label>
+				<ion-input type="email" name="email" ngModel> </ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating> Senha </ion-label>
+				<ion-input type="password" name="senha" ngModel> </ion-input>
+			</ion-item>
+
+			<div padding>
+				<button ion-button primary block>Registre-se</button>
+				<button ion-button outline block type="button" (click)="voltar()">Voltar</button>
+			</div>
+		</ion-list>
+	</form>
+</ion-content>

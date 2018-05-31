@@ -1,0 +1,32 @@
+<ion-content>
+	<form #f="ngForm" (ngSubmit)="atualizar(f)">
+		<ion-list>
+
+			<ion-item>
+        <ion-label floating> Nome completo </ion-label>
+				<ion-input type="text" placeholder="Nome" [(ngModel)]="user.nome" name="nome"></ion-input>
+			</ion-item>
+
+			<ion-item>
+        <ion-label floating> E-mail </ion-label>
+				<ion-input type="text" placeholder="E-mail" [(ngModel)]="user.email" name="email"></ion-input>
+			</ion-item>
+
+			<ion-item>
+        <ion-label floating> Telefone </ion-label>
+				<ion-input type="tel" placeholder="Telefone" [(ngModel)]="user.telefone" name="telefone"></ion-input>
+			</ion-item>
+
+			<ion-item>
+        <ion-label floating> Senha </ion-label>
+				<ion-input type="password" placeholder="Senha" [(ngModel)]="user.senha" name="senha"></ion-input>
+			</ion-item>
+
+			<div padding>
+				<button ion-button primary block (click)="atualizar()">Atualizar dados</button>
+				<button ion-button outline block type="button" (click)="voltar()">Voltar</button>
+			</div>
+
+		</ion-list>
+	</form>
+</ion-content>

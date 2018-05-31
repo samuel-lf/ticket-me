@@ -1,0 +1,12 @@
+
+<ion-content>
+
+    <div padding>
+        <button ion-button full icon-left ><ion-icon name="barcode"></ion-icon> LER QR Code</button>
+    </div>
+    <ion-card *ngIf="scannedCode">
+        <ion-card-content>
+            Result from scan: {{ scannedCode }}
+        </ion-card-content>
+    </ion-card>
+</ion-content>

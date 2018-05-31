@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Criar Promoção
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <form #formcard="ngForm" (ngSubmit)="registrarPromo(formcard)">
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating> Nome da promoção </ion-label>
+                <ion-input type="text"  name="nomeCard" ngModel></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating> Pontos necessário: </ion-label>
+                <ion-input type="number" name="pontos" ngModel></ion-input>
+            </ion-item>
+
+            <ion-item padding>
+                <ion-label floating>Data de finalização:</ion-label>
+                <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MM YYYY"  name ="dataFimPromo" [(ngModel)]="dataFimPromo"></ion-datetime>
+                <p>{{dataFimPromo}}</p>
+            </ion-item>
+
+            <div padding>
+                <button ion-button full icon-left>
+                    <ion-icon name="pricetag"></ion-icon> Criar promoção</button>
+            </div>
+        </ion-list>
+    </form>
+</ion-content>

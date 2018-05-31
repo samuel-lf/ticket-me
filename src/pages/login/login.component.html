@@ -1,0 +1,27 @@
+<ion-content>
+
+<div style="text-align: center">
+  <img src="https://firebasestorage.googleapis.com/v0/b/ticketmeapp-97.appspot.com/o/Logo%20Final.png?alt=media&token=5e292415-0b91-40d7-b5c6-a6649e981f7e" style="width: 60%;"/>
+</div>
+
+<form #f="ngForm" (ngSubmit)="entrar(f)">
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating> Email </ion-label>
+      <ion-input type="email" name="email" ngModel> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating> Senha </ion-label>
+      <ion-input type="password" name="senha" ngModel> </ion-input>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block>Entrar</button>
+      <button ion-button outline block type="button" (click)="registrarUser()">Registre-se usuário</button>
+      <button ion-button outline block type="button" (click)="registrarEmp()">Registre-se empresa</button>
+    </div>
+  </ion-list>
+</form>
+</ion-content>
