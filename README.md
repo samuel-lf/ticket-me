@@ -1,7 +1,5 @@
 ## Ticket Me
 
-[Edit this project on StackBlitz](https://stackblitz.com/edit/back-end)
-
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template with the Ionic CLI:
