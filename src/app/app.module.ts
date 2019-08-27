@@ -33,15 +33,6 @@ import { ResgateEmpresaPage } from '../pages/resgate-empresa/resgate-empresa';
 
 
 
-const config = {
-    apiKey: "AIzaSyDsrV_OZcvC0jflTJaXkXn09nVuD8Va4Z8",
-    authDomain: "ticketmeapp-97.firebaseapp.com",
-    databaseURL: "https://ticketmeapp-97.firebaseio.com",
-    projectId: "ticketmeapp-97",
-    storageBucket: "ticketmeapp-97.appspot.com",
-    messagingSenderId: "1044307920488"
-  };
-
 @NgModule({
   declarations: [
     MyApp,
@@ -64,7 +55,6 @@ const config = {
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(config),
     AngularFirestoreModule,
     AngularFireAuthModule,
     NgxQRCodeModule
