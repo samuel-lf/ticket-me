@@ -1,7 +1,5 @@
 ## Ticket Me
 
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
-
 ## How to use this template with the Ionic CLI:
 
 First you install the pre-requisites:
